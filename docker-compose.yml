@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  learn_graph_ql:
+    container_name: learn_graph_ql
+    build: .
+    ports:
+      - 3000:8080
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
